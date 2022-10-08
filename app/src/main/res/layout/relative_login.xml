@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/yellow">
+
+
+    <ImageView
+        android:id="@+id/kakaoIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_logo_kakao"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/titleMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RelativeLayout Login!"
+        android:textColor="#3C1E1E"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/kakaoIcon"/>
+
+    <EditText
+        android:id="@+id/editID"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/titleMsg"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:hint="ID" />
+
+
+
+    <EditText
+        android:id="@+id/editPW"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:hint="PassWord"
+        android:layout_below="@+id/editID"/>
+
+    <TextView
+        android:id="@+id/resultMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#E91E1E"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/editPW"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:background="@drawable/btn_white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/resultMsg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="또는"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/btn_login"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_QR_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="QR 코드로 로그인"
+        android:background="@drawable/btn_white"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_login" />
+
+    <android.widget.CheckBox
+        android:id="@+id/checkAuto"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:button="@android:color/transparent"
+        android:background="@drawable/check_box"
+        android:checked="false"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/btn_QR_login"
+        android:layout_below="@id/btn_QR_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동로그인"
+        android:textColor="#88000000"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/checkAuto"
+        android:layout_below="@id/btn_QR_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카카오계정 찾기  |  비밀번호 재설정"
+        android:textColor="#88000000"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginBottom="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

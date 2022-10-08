@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "17355412510",
+    "project_id": "loginex-53f00",
+    "storage_bucket": "loginex-53f00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17355412510:android:65ad19f418d9bc558c8a0f",
+        "android_client_info": {
+          "package_name": "com.example.loginex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17355412510-qj6l8vk8p9d7a0mn0m8g1hr6uqvrkc8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3uJ6fEbHqaHzwJfOEjwq9TUJeW2tw6Lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17355412510-qj6l8vk8p9d7a0mn0m8g1hr6uqvrkc8c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
